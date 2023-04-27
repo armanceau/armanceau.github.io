@@ -419,8 +419,7 @@ p .reveal {
 
 .imgContact:hover{
   max-width: 100px;
-  transform: translate(-0%, -25%);
-  scale: 1.1;
+  scale: 1.2;
 }
 
 .bold{
