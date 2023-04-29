@@ -1082,3 +1082,59 @@ i:hover{
   background: rgba(64,64,64,0.5);
   color: #fff;
 }
+
+.divGratificationButtons{
+  display:flex;
+  flex-direction: column;
+  align-content: space-around;
+  gap: 20px;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.detailGratificationButton > a{
+  display: flex;
+  flex-direction: row;
+  background-color: #FC7C7C;
+  border-radius: 30px;
+  transition: .5s;
+}
+
+.detailGratificationButton{
+  display: flex;
+  flex-direction: column;
+  background-color: #FC7C7C;
+  border-radius: 30px;
+  transition: .5s;
+  padding: 10px 10px 10px 10px;
+} 
+
+.detailGratificationButton:hover{
+  scale: 1.05;
+}
+
+.detailGratHeader{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.detailGratButtonTitleDesc{
+  font-size: 3vw;
+  font-weight: bold;
+  margin: auto;
+  margin-left: 30%;
+}
+
+.detailGratButtonTitle{
+  font-size: 3vw;
+  font-weight: bold;
+  margin: auto;
+  margin-right: calc(50% - 100px );
+}
+
+.detailGratButtonP{
+  text-align: center;
+  font-size: 1.4vw;
+}
