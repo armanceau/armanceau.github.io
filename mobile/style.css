@@ -81,6 +81,10 @@ body{
     align-items: center;
 }
 
+.main-title{
+    text-align: center;
+}
+
 .main-elements{
     /* border: 1px solid red; */
     width: 100%;
