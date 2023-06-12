@@ -127,6 +127,7 @@ const detailBoutons = document.querySelectorAll('.detailBouton');
 const detailProjects = document.querySelectorAll('.detailProject');
 const divGratifications = document.querySelectorAll('.divGratification');
 const tags = document.querySelectorAll('.tag');
+const detailBoutonPs = document.querySelectorAll('.detailBoutonP');
 
 
 switchBox.addEventListener('click', function(){
@@ -139,6 +140,10 @@ switchBox.addEventListener('click', function(){
 
   detailBoutons.forEach(detailBouton => {
     detailBouton.classList.toggle('detailBouton-change');
+  });
+
+  detailBoutonPs.forEach(detailBoutonP => {
+    detailBoutonP.classList.toggle('detailBoutonP-change');
   });
 
   tags.forEach(tag => {
@@ -169,10 +174,14 @@ addEventListener("DOMContentLoaded", (event) => {
     icon?.classList.toggle('fa-sun');
     icon?.classList.toggle('i-change');
     title1?.classList.toggle('h1-change');
-    title2?.classList.toggle('h2-change');  
+    title2?.classList.toggle('h2-change'); 
 
     detailBoutons.forEach(detailBouton => {
       detailBouton.classList.toggle('detailBouton-change');
+    });
+
+    detailBoutonPs.forEach(detailBoutonP => {
+      detailBoutonP.classList.toggle('detailBoutonP-change');
     });
 
     tags.forEach(tag => {

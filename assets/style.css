@@ -889,6 +889,12 @@ i:hover{
   transition: .5s;
 }
 
+.detailBouton > a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .detailBouton:hover > a > img{
   scale: 1.1;
 }
@@ -1138,4 +1144,24 @@ i:hover{
   text-align: center;
   font-size: 1.4vw;
   color: #fff;
+}
+
+.detailBoutonP{
+  text-align: center; 
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+
+.detailBouton > a > .detailBoutonP{
+  transition: .5s;
+}
+
+.detailBouton:hover > a > .detailBoutonP{
+  scale: 1.1;
+}
+
+.detailBoutonP-change{
+  color: #404040;
 }
