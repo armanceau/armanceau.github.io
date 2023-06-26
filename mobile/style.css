@@ -28,6 +28,19 @@ body{
     align-items: center;
 }
 
+.container-comingSoon{
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 #menu__toggle {
     opacity: 0;
 }
@@ -177,8 +190,13 @@ footer{
 }
 
 h1{
+    color: #292D32;
     font-size: 2em;
     margin: 0;
+}
+
+.h1-change, .h2-change{
+    color: #fff;
 }
 
 h1 > span{
@@ -187,6 +205,7 @@ h1 > span{
 }
 
 h2{
+    color: #292D32;
     font-size: 1.2em;
     font-weight: 900;
 }
