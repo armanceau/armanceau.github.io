@@ -247,4 +247,7 @@ i{
         width: 150px;
         height: auto;
     }
+    .divContact {
+        gap: 1em;
+    }
 }
