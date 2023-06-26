@@ -43,6 +43,7 @@ const icon = document.querySelector('i');
 const tags = document.querySelectorAll('.tag');
 const btnBurger = document.querySelector('.menu__btn');
 const menuBurger = document.querySelector('.menu__box');
+const detailProjects = document.querySelectorAll('.detailProject');
 
 switchBox.addEventListener('click', function(){
   backgroundBody?.classList.toggle('backgroundBody-change');
@@ -53,6 +54,9 @@ switchBox.addEventListener('click', function(){
   title2?.classList.toggle('h2-change');
   btnBurger?.classList.toggle('menu__btn-change');
 
+  detailProjects.forEach(detailProject => {
+    detailProject.classList.toggle('detailProject-change');
+  });
 
 
   tags.forEach(tag => {
@@ -73,6 +77,10 @@ addEventListener("DOMContentLoaded", (event) => {
     title1?.classList.toggle('h1-change');
     title2?.classList.toggle('h2-change'); 
     btnBurger?.classList.toggle('menu__btn-change');
+
+    detailProjects.forEach(detailProject => {
+      detailProject.classList.toggle('detailProject-change');
+    });
 
     tags.forEach(tag => {
       tag.classList.toggle('tag-change');
