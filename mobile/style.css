@@ -240,3 +240,11 @@ i{
 .backgroundBody-change{
     background-color: #292D32;
 }
+
+
+@media (max-height: 650px) {
+    .imgProfil {
+        width: 150px;
+        height: auto;
+    }
+}
