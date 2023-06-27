@@ -405,7 +405,8 @@ h3{
         gap: 1em;
     }
     .menu__box{
-        margin-top: 50px;
+        margin-top: 60px;
+        gap: 40px;
     }
     .menu__item{
         width: 300px;
