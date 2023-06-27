@@ -17,83 +17,69 @@
 <body>
 
     <div class="container">
-        <section class="header">
+        <header>
+			<div class="hamburger-menu">
+				<input id="menu__toggle" type="checkbox" />
+	
+				<label class="menu__btn" for="menu__toggle">
+				  <span class="menu__btn-span"></span>
+				</label>
+			
+				<ul class="menu__box">
+				  <li><a class="menu__item" href="home.html">HOME</a></li>
+				  <li><a class="menu__item" href="about.html">ABOUT</a></li>
+				  <li><a class="menu__item" href="comingSoon.html">CV</a></li>
+				  <li><a class="menu__item" href="projects.html">PROJECTS</a></li>
+	
+					<div class="social-medias">    
+						<div>
+							<a href="mailto:arthur.manceau1@outlook.fr" target="_blank"><img width="70" height="70" src="assets/icons/mail.png" alt="Adresse mail"></a>
+						</div>
+			
+						<div>
+							<a href="https://www.linkedin.com/in/arthur-manceau-474671230/" target="_blank"><img width="70" height="70" src="assets/icons/linkedin.png" alt="Profil Linkedin"></a>
+						</div>
+			
+						<div>
+							<a href="https://twitter.com/armanceau" target="_blank"><img  width="70" height="70" src="assets/icons/twitter.png" alt="Profil twitter"></a>
+						</div>
+					</div>
+				</ul>
+			</div>
 
-            <div class="div-profil-image">
-                <img class="profil-image" src="../assets\img\arthur.webp" alt="Arthur image" width="100" height="100">
-            </div>
+			<div class="divClockSwitch">
+				<div>
+					<i class="btn fas fa-moon"></i>
+				</div>
+				
+				<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
 
-            <div class="titles">
-                <div id="h1-home">
-                    <h1>ARTHUR MANCEAU</h1>
-                </div>
-                <div id="h2-home">
-                    <h2>French IT Student</h2>
-                </div>
-            </div>
+			</div>
 
-        </section>
+		</header>
 
-        <section class="main">
-
-            <div class="main-title">
-                <h3 id="h3-home">Find<span class="span-GYG"> me </span>on these <span class="span-GYG">platforms </span>too!</h3>
-            </div>
-
-            <div class="main-elements">
-                <div class="main-element">
-                    <a href="https://github.com/armanceau2" target="_blank"><img class="imgContact" width="80" height="80" src="../assets\img\github.webp" alt="Profil github"></a>
-                </div>
-    
-                <div class="main-element">
-                    <a href="https://dribbble.com/arrthur" target="_blank"><img class="imgContact" width="80" height="80" src="../assets\img\dribbble.webp" alt="Profil dribble"></a>
-                </div>
-    
-                <div class="main-element">
-                    <a href="mailto:arthur.manceau1@outlook.fr" target="_blank"><img class="imgContact" width="80" height="80" src="../assets\img\mail.webp" alt="Adresse mail"></a>
-                </div>
-    
-                <div class="main-element">
-                    <a href="https://www.linkedin.com/in/arthur-manceau-474671230/" target="_blank"><img class="imgContact" width="80" height="80" src="../assets\img\linkedin.webp" alt="Profil Linkedin"></a>
-                </div>
-    
-                <div class="main-element">
-                    <a href="https://twitter.com/armanceau" target="_blank"><img class="imgContact" width="80" height="80" src="../assets\img\twitter.webp" alt="Profil twitter"></a>
-                </div>
-    
-                <div class="main-element">
-                    <a href="https://fr.fiverr.com/s/dbb6y2" target="_blank"><img class="imgContact" width="80" height="80" src="../assets\img\fiverr.webp" alt="Profil fiverr"></a>
-                </div>
-            </div>
-
+        <main class="about-main">
             
-        </section>
+            <section class="right">
 
-        <section class="footer">
+                <div class="about-main-right-p">
+                    I'm <span class="span-pink">Arthur Manceau</span>, I'am 21 years old and I would like to be <span class="span-pink">web developper</span>, I love 
+                    team sport (football)
+                    which is rather useful because I am used to working 
+                    in a team.   
+                </div>
+                <div>
+                    <img src="/assets/img/cg.webp" alt="Cg photo" height="200" width="200">
+                </div>
+            </section>
 
-            <div class="footer-element active">
-                <img src="assets/icons-dark/home-dark.png" alt="Dark icon home" width="50" height="50">
-            </div>
-
-            <div class="footer-element">
-                <img src="assets/icons-dark/about-dark.png" alt="Dark icon about" width="50" height="50">
-            </div>
-
-            <div class="footer-element">
-                <img src="assets/icons-dark/cv-dark.png" alt="Dark icon cv" width="50" height="50">
-            </div>
-
-            <div class="footer-element">
-                <img src="assets/icons-dark/project-dark.png" alt="Dark icon project" width="50" height="50">
-            </div>
-
-            <div class="footer-element">
-                <img src="assets/icons-dark/reward-dark.png" alt="Dark icon reward" width="50" height="50">
-            </div>
-
-        </section>
+            <section class="left">
+                <h3>WHOAMI?</h3>
+            </section>
+        </main>        
 
     </div>
 
 </body>
+<script src="script.js"></script>
 </html>

@@ -336,10 +336,57 @@ i{
     transition: .5s;
   }
   
-  .detailProject > a > .tags > .tag-change {
+.detailProject > a > .tags > .tag-change {
     background: rgba(64,64,64,0.5);
     color: #fff;
-  }
+}
+
+.about-main{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    width: 80%;
+    height: 80%;
+}
+
+.left{
+    width: 30%;
+    font-size: 4em;
+    color: #FC7C7C !important; 
+    height: 100%;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-weight: 900;
+}
+
+.right{
+    color: #292D32;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.8em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-change{
+    color: #fff; 
+}
+
+.span-pink{
+    color: #FC7C7C;
+}
+
+h3{
+    margin: 0;
+}
+
+
+  
+
 
 
 
