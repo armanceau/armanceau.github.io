@@ -396,7 +396,7 @@ h3{
 }
 
 
-@media (max-height: 700px) {
+@media (max-height: 850px) {
     .imgProfil {
         width: 150px;
         height: auto;
