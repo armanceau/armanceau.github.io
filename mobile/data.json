@@ -1,0 +1,38 @@
+[
+    {
+        "libelle": "Graphic Design",
+        "pourcentage": "85"
+    },
+    {
+        "libelle": "HTML/CSS",
+        "pourcentage": "95"
+    },
+    {
+        "libelle": "PHP",
+        "pourcentage": "80"
+    },
+    {
+        "libelle": "JavaScript",
+        "pourcentage": "80"
+    },
+    {
+        "libelle": "Data base - SQL",
+        "pourcentage": "90"
+    },
+    {
+        "libelle": "Data visualization - ChartJS",
+        "pourcentage": "95"
+    },
+    {
+        "libelle": "ReactJS - VueJS",
+        "pourcentage": "20"
+    },
+    {
+        "libelle": "Symfony",
+        "pourcentage": "95"
+    }
+    {
+        "libelle": "UI/UX",
+        "pourcentage": "85"
+    }
+]
