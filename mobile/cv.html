@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Bienvenue sur la page d'accueil d'Arthur Manceau, développeur web. Explorez mon site web et découvrez mes compétences et réalisations en matière de développement web. Utilisez la barre de navigation pour accéder à mes différentes pages, y compris mon profil, mes réalisations, et plus encore.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Give+You+Glory" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+    <title>Arthur Manceau</title>
+    <link rel="shortcut icon" href="../assets\img\arthur.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<header>
+			<div class="hamburger-menu">
+				<input id="menu__toggle" type="checkbox" />
+	
+				<label class="menu__btn" for="menu__toggle">
+				  <span class="menu__btn-span"></span>
+				</label>
+			
+				<ul class="menu__box">
+				  <li><a class="menu__item" href="home.html">HOME</a></li>
+				  <li><a class="menu__item" href="about.html">ABOUT</a></li>
+				  <li><a class="menu__item" href="comingSoon.html">CV</a></li>
+				  <li><a class="menu__item" href="projects.html">PROJECTS</a></li>
+	
+					<div class="social-medias">    
+						<div>
+							<a href="mailto:arthur.manceau1@outlook.fr" target="_blank"><img width="70" height="70" src="assets/icons/mail.png" alt="Adresse mail"></a>
+						</div>
+			
+						<div>
+							<a href="https://www.linkedin.com/in/arthur-manceau-474671230/" target="_blank"><img width="70" height="70" src="assets/icons/linkedin.png" alt="Profil Linkedin"></a>
+						</div>
+			
+						<div>
+							<a href="https://twitter.com/armanceau" target="_blank"><img  width="70" height="70" src="assets/icons/twitter.png" alt="Profil twitter"></a>
+						</div>
+					</div>
+				</ul>
+			</div>
+
+			<div class="divClockSwitch">
+				<div>
+					<i class="btn fas fa-moon"></i>
+				</div>
+				
+				<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+			</div>
+
+		</header>
+
+		<main>
+            <section class="main-filters">
+                <!-- Filter About me -->
+                <div class="main-filters-filter filter-active">
+                    <div class="main-filters-filter-img">
+                        <img src="assets/icons/profil.png" alt="Profil Image" height="40" width="40">
+                    </div>
+
+                    <div class="main-filters-filter-title">
+                        About me
+                    </div>
+                </div>
+
+                <!-- Filter Experience -->
+                <div class="main-filters-filter">
+                    <div class="main-filters-filter-img">
+                        <img src="assets/icons/experience.png" alt="Profil Image" height="40" width="40">
+                    </div>
+
+                    <div class="main-filters-filter-title">
+                        Experience
+                    </div>
+                </div>
+
+                <!-- Filter Education -->
+                <div class="main-filters-filter">
+                    <div class="main-filters-filter-img">
+                        <img src="assets/icons/education.png" alt="Profil Image" height="40" width="40">
+                    </div>
+
+                    <div class="main-filters-filter-title">
+                        Education
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-skills">
+                <div class="main-skills-text">
+                    <div class="main-skills-title"></div>
+                    <div class="main-skills-pourcentage"></div>
+                </div>
+
+                <div class="main-skills-line"></div>
+                <div class="main-skills-line-color"></div>
+
+            </section>
+
+            <section class="main-interests">
+                <div class="main-interests-element">Web design</div>
+                <div class="main-interests-element">Web development</div>
+                <div class="main-interests-element">Sport</div>
+                <div class="main-interests-element">Videos games</div>
+                <div class="main-interests-element">Art</div>
+            </section>
+			
+		</main>
+
+		<footer>
+			
+		</footer>
+	</div>
+	
+	  
+
+</body>
+<script src="script.js"></script>
+</html>
