@@ -1,38 +1,73 @@
-[
-    {
-        "libelle": "Graphic Design",
-        "pourcentage": "85"
-    },
-    {
-        "libelle": "HTML/CSS",
-        "pourcentage": "95"
-    },
-    {
-        "libelle": "PHP",
-        "pourcentage": "80"
-    },
-    {
-        "libelle": "JavaScript",
-        "pourcentage": "80"
-    },
-    {
-        "libelle": "Data base - SQL",
-        "pourcentage": "90"
-    },
-    {
-        "libelle": "Data visualization - ChartJS",
-        "pourcentage": "95"
-    },
-    {
-        "libelle": "ReactJS - VueJS",
-        "pourcentage": "20"
-    },
-    {
-        "libelle": "Symfony",
-        "pourcentage": "95"
-    },
-    {
-        "libelle": "UI/UX",
-        "pourcentage": "85"
-    }
-]
+{
+    "aboutMe": [
+        {
+            "libelle": "Graphic Design",
+            "pourcentage": "85"
+        },
+        {
+            "libelle": "HTML/CSS",
+            "pourcentage": "95"
+        },
+        {
+            "libelle": "PHP",
+            "pourcentage": "80"
+        },
+        {
+            "libelle": "JavaScript",
+            "pourcentage": "80"
+        },
+        {
+            "libelle": "Data base - SQL",
+            "pourcentage": "90"
+        },
+        {
+            "libelle": "Data visualization - ChartJS",
+            "pourcentage": "95"
+        },
+        {
+            "libelle": "ReactJS - VueJS",
+            "pourcentage": "20"
+        },
+        {
+            "libelle": "Symfony",
+            "pourcentage": "95"
+        },
+        {
+            "libelle": "UI/UX",
+            "pourcentage": "85"
+        }
+    ],
+    "experience": [
+        {
+            "libelle": "Web development intern",
+            "text": "2023 - Retail Renault Group"
+        },
+        {
+            "libelle": "Web developer freelancer ",
+            "text": "2023 - Fiverr"
+        },
+        {
+            "libelle": "Web designer freelancer",
+            "text": "2023 - Fiverr"
+        },
+        {
+            "libelle": "Web development intern",
+            "text": "2022 - Retail Renault Group"
+        }        
+    ],
+    "education": [
+        {
+            "libelle": "BTS SIO - SLAM",
+            "text": "2021 - 2023  ·  Orléans, 45000"
+        },
+        {
+            "libelle": "IUT Chimie",
+            "text": "2020 - 2021  ·  Le Mans, 72000"
+        },
+        {
+            "libelle": "BAC S - SVT",
+            "text": "2017 - 2020  ·  Orléans, 45000"
+        }      
+    ]
+  }
+  
