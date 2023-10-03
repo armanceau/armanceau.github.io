@@ -234,7 +234,7 @@ nav .ul a:hover{
     height: auto;
 }
 
-.container#home{
+.container{
     display: flex;
     height: 100%;
     width: 100%;
@@ -245,7 +245,7 @@ nav .ul a:hover{
     row-gap: 6vh;
   }
   
-header#home{
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -254,7 +254,7 @@ header#home{
     margin-top: 20px;
 }
   
-main#home {
+main {
     display: flex;
     flex-direction: column;
     text-align: center;
