@@ -250,7 +250,7 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    height: 100px;
+    height: 10%;
     margin-top: 20px;
 }
   
@@ -266,6 +266,34 @@ main {
     height: 80%;
     gap: -10px;
 }
+
+main#about{
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    width: 90%;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.left{
+    border: 1px solid red;
+    width: 600px;
+    height: 600px;
+    display: flex;
+}
+
+.right{
+    border: 1px solid red;
+    width: 600px;
+    height: 600px;
+}
+
+.left-up{
+    width: 100%;
+    height: 350px;
+}
   
 footer#home {
     display: flex;
@@ -278,6 +306,7 @@ footer#home {
     gap: 1.5rem;
     justify-content: center;
     margin-bottom: 20px;
+    height: 10%;
 }
 
 #MyClockDisplay{
@@ -329,7 +358,7 @@ h1{
 
 .h1-change{
     color: #fff;
-  }
+}
   
 h2{
     margin: 0;
@@ -359,6 +388,17 @@ h2 .reveal {
     font-family: 'Give You Glory', cursed;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1050px) {
     #imgCg{
        display: none;
@@ -369,9 +409,18 @@ h2 .reveal {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .imgProfil{
        display: none;
+    }
+
+    .divClockSwitch{
+        position: absolute;
+        right: 20px;
+    }
+
+    header{
+        justify-content: center;
     }
 
 }
