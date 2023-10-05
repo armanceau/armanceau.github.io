@@ -45,7 +45,7 @@
     left: 0;
     transition: opacity .3s;
     mix-blend-mode: difference;
-    z-index: 2;
+    z-index: 99;
 }
   
 .circle-hide{
@@ -105,10 +105,19 @@ body{
     transition: .5s;
 }
 
-.divImgProfil{
+.imgProfilBurger {
+    width: 100px;
+    height: auto;
+    border-radius: 999px 999px 999px 999px;
+    background: var(--pink);
+    transform: scale(var(--f));
+    transition: .5s;
+}
+
+/* .divImgProfil{
     position: relative;
 
-}
+} */
   
 .imgProfil:hover {
     --f: 1.1;
@@ -388,6 +397,111 @@ h2 .reveal {
     font-family: 'Give You Glory', cursed;
 }
 
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+}
+
+.menu__btn {
+    position: fixed;
+    top: 40px;
+    left: 20px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #292D32;
+    transition-duration: .25s;
+    border-radius: 10px;
+}
+
+.menu__btn-change > span, .menu__btn-change > span::before, .menu__btn-change > span::after {
+    background-color: #fff;
+}
+
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+ 
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    z-index: 19;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    
+    margin: 0;
+    padding: 80px 0;
+    
+    list-style: none;
+    background-color: #fff;
+    
+    transition-duration: .25s;
+    margin-top: 100px;
+}
+
+.menu__box-change{
+    background-color: #292D32;
+}
+
+.menu__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FC7C7C;
+    width: 300px;
+    height: 60px;
+
+    border-radius: 10px;
+
+    color: #333;
+    font-weight: 900;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+
+.hamburger-menu{
+    display: none;
+}
 
 
 
@@ -399,7 +513,9 @@ h2 .reveal {
 
 
 
-@media (max-width: 1050px) {
+
+
+@media (max-width: 1100px) {
     #imgCg{
        display: none;
     }
@@ -411,7 +527,9 @@ h2 .reveal {
 
 @media (max-width: 900px) {
     .imgProfil{
-       display: none;
+        position: absolute;
+        top: 5px;
+        left: 50px;
     }
 
     .divClockSwitch{
@@ -423,5 +541,19 @@ h2 .reveal {
         justify-content: center;
     }
 
+}
+
+@media (max-width: 660px) {
+    .hamburger-menu{
+        display: flex;
+    }
+
+    .imgProfil{
+        display: none;
+    }
+
+    nav{
+        display: none;
+    }
 }
   
