@@ -556,4 +556,13 @@ h2 .reveal {
         display: none;
     }
 }
+
+@media (max-width: 966px){
+    .circle-main{
+        display: none;
+    }
+    html{
+        cursor: auto;
+    }
+}
   
