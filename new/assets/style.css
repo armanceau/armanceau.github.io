@@ -105,7 +105,7 @@ body{
     transition: .5s;
 }
 
-.imgProfilBurger {
+.imgProfilMobile {
     width: 100px;
     height: auto;
     border-radius: 999px 999px 999px 999px;
@@ -503,6 +503,18 @@ h2 .reveal {
     display: none;
 }
 
+.main-img{
+    display: none;
+}
+
+.main-img > .imgProfilMobile{
+    width: 250px;
+    height: auto;
+    border-radius: 999px 999px 999px 999px;
+    background: #FC7C7C;
+    transform: scale(var(--f));
+    transition: .5s;
+}
 
 
 
@@ -541,6 +553,32 @@ h2 .reveal {
         justify-content: center;
     }
 
+    h1{
+        color: #292D32;
+        font-size: 2em;
+        margin: 0;
+    }
+    
+    .h1-change, .h2-change{
+        color: #fff;
+    }
+
+    h1 > .reveal{
+        font-family: 'Fredoka', sans-serif;
+        color: var(--black);
+    }
+    
+    h1 > span{
+        font-family: 'Give You Glory', cursed;
+        color: #FC7C7C;
+    }
+    
+    h2{
+        color: #292D32;
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+
 }
 
 @media (max-width: 660px) {
@@ -550,6 +588,10 @@ h2 .reveal {
 
     .imgProfil{
         display: none;
+    }
+
+    .main-img{
+        display: flex;
     }
 
     nav{
@@ -563,6 +605,13 @@ h2 .reveal {
     }
     html{
         cursor: auto;
+    }
+}
+
+@media (max-height: 660px) {
+    .main-img > .imgProfilMobile{
+        width: 150px;
+        height: auto;
     }
 }
   
