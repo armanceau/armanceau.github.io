@@ -29,6 +29,8 @@
     --pink: #FC7C7C;
     --black: #232323;
     --white: #fff;
+    --mid-pink: rgba(252,124,124, 0.75);
+    --ligh-pink: rgba(252, 124, 124, 0.5);
 }
   
 .circle-main{
@@ -278,30 +280,99 @@ main {
 
 main#about{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     height: 80%;
     width: 90%;
-    gap: 50px;
     flex-wrap: wrap;
     align-content: stretch;
+    font-family: 'Inter', sans-serif;
+}
+
+.left, .right {
+    flex: 1;
+    min-width: 48%;
+    border-radius: 30px;
+}
+
+@media (max-width: 1120px) {
+    main#about{
+        flex-direction: row;
+    }
+
+    .left, .right {
+        flex: 1 100%;
+        min-width: auto;
+    }
 }
 
 .left{
-    border: 1px solid red;
-    width: 600px;
-    height: 600px;
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 48%;
 }
 
-.right{
-    border: 1px solid red;
-    width: 600px;
-    height: 600px;
-}
-
-.left-up{
+.left-up {
     width: 100%;
-    height: 350px;
+    height: 70%;
+    background-color: var(--black);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-up > div:first-child {
+    width: 90%;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: left;
+    color: var(--white);
+    margin-top: 20px;
+}
+
+#inputAbout{
+    border: none;
+    background-color: var(--pink);
+    border-radius: 30px;
+    padding: 5px 25px 5px 25px;
+    font-size: 25px;
+}
+
+.left-bottom{
+    display: flex;
+    justify-content: space-between;
+    height: 25%;
+}
+
+.left-bottom-element{
+    width: 25%;
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+.left-bottom .left-bottom-element:first-child {
+    background-color: var(--pink);
+}
+
+.left-bottom .left-bottom-element:nth-child(2) {
+    background-color: var(--mid-pink);
+}
+
+.left-bottom .left-bottom-element:nth-child(3) {
+    background-color: var(--ligh-pink);
+}
+  
+.left-bottom-element-title{
+    font-size: 50px;
+    font-weight: 600;
 }
   
 footer#home {
