@@ -296,22 +296,29 @@ main#about{
     border-radius: 30px;
 }
 
-@media (max-width: 1120px) {
-    main#about{
-        flex-direction: row;
-    }
-
-    .left, .right {
-        flex: 1 100%;
-        min-width: auto;
-    }
-}
-
 .left{
     display: flex;
     flex-direction: column;
     gap: 20px;
     max-width: 48%;
+}
+
+@media (max-width: 1120px) {
+    main#about{
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .left, .right {
+        flex: 1 100%;
+        min-width: auto;
+        max-width: 100%;
+        height: 100%;
+    }
+    .left{
+       
+
+    }
 }
 
 .left-up {
