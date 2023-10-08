@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="All my gratifications">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Give+You+Glory" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+
+    <title>Arthur Manceau</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            width: 100%;
+        }
+
+        .loader-container {
+            text-align: center;
+            background-color: #fff;
+            width: 30%;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .loader {
+            width: 0;
+            height: 10px;
+            background-color: #3498db; /* Couleur de la barre de chargement */
+            animation: load 2s ease-out forwards; /* Animation de la barre de chargement */
+            border-radius: 10px;
+        }
+
+        .percentage {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        @keyframes load {
+            0% {
+                width: 0; /* La barre de chargement commence à 0% */
+            }
+            65% {
+                width: 65%; /* La barre de chargement atteint 65% */
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1 class="txtComingSoon">
+        <span class="reveal">⏳COMING SOON⏳</span>
+    </h1>
+
+    <br>
+
+    <div class="loader-container">
+        <div class="loader"></div>
+        <div class="percentage">0%</div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const loader = document.querySelector(".loader");
+    const percentageText = document.querySelector(".percentage");
+
+    let currentPercentage = 0;
+    const targetPercentage = 65; // La cible est 65%
+    const animationDuration = 2000; // Durée de l'animation en millisecondes
+
+    const startTime = performance.now();
+
+    const increasePercentage = (timestamp) => {
+        const elapsedTime = timestamp - startTime;
+        if (elapsedTime < animationDuration) {
+            const progress = (elapsedTime / animationDuration) * 100;
+            currentPercentage = Math.min(progress, targetPercentage);
+            loader.style.width = currentPercentage + "%";
+            percentageText.textContent = Math.floor(currentPercentage) + "%";
+
+            requestAnimationFrame(increasePercentage);
+        } else {
+            // Animation terminée, fixe le pourcentage à la cible
+            currentPercentage = targetPercentage;
+            loader.style.width = currentPercentage + "%";
+            percentageText.textContent = currentPercentage + "%";
+        }
+    };
+
+    // Démarrer l'animation
+    requestAnimationFrame(increasePercentage);
+});
+
+</script>
+</html>

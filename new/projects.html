@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Consultez ma page Projets pour découvrir tous les projets de développement web sur lesquels j'ai travaillé. Chaque projet est présenté sous forme de carte et vous pouvez cliquer dessus pour obtenir plus de détails. J'ai acquis des compétences précieuses grâce à ces projets et je suis fier de les partager avec vous.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Give+You+Glory" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+    <title>Arthur Manceau</title>
+    <link rel="shortcut icon" href="assets/imgs/others/Spaceship.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body class="backgroundBody">
+    <div class="container">
+
+        <header id="home">
+            <div class="hamburger-menu">
+				<input id="menu__toggle" type="checkbox" />
+	
+				<label class="menu__btn" for="menu__toggle">
+				  <span class="menu__btn-span"></span>
+				</label>
+			
+				<ul class="menu__box">
+                    <li><img class="imgProfilMobile" src="assets/imgs/others/arthur.webp" alt="photo de profil"></li>    
+                    <li><a class="menu__item" href="home.html">Home</a></li>
+                    <li><a class="menu__item" href="comingSoon.html">About</a></li>
+                    <li><a class="menu__item" href="projects.html">Projects</a></li>
+				</ul>
+			</div>
+
+
+            <div class="divImgProfil">
+                <img class="imgProfil" src="assets/imgs/others/arthur.webp" alt="photo de profil">
+            </div>
+                
+            <nav>
+                <div class="ul">
+                    <a class="" href="home.html">
+                        <div class="li">HOME</div>
+                    </a>
+                </div>
+
+                <div class="ul">
+                    <a class="" href="about.html">
+                        <div class="li">ABOUT</div>
+                    </a>
+                </div>
+
+                <div class="ul">
+                    <a class="active" href="projects.html">
+                        <div class="li">PROJECTS</div>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="divClockSwitch">
+                <div>
+                    <i class="btn fas fa-moon"></i>
+                </div>
+                
+                <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+            </div>
+        </header>
+
+        <main>
+            <div id="project">
+
+                <div class="element-project">
+                    <a href="#">
+                        <div class="element-project-text">
+                            <div class="element-project-title">Training</div>
+                            <div class="tags">
+                                <div class="tag php">PHP</div>
+                                <div class="tag sql">SQL</div>
+                                <div class="tag js">JS</div>
+                                <div class="tag css">CSS</div>
+                                <div class="tag htmlColor">HTML</div>
+                                <div class="tag json">JSON</div>
+                            </div>
+                        </div>
+    
+                        <div class="element-project-img">
+                            <img src="assets/imgs/logosProjects/trainingLogo.png" alt="Logo training">
+                        </div>
+                    </a>  
+                </div>
+
+                <div class="element-project">
+                    <a href="#">
+                        <div class="element-project-text">
+                            <div class="element-project-title">Workout</div>
+                            <div class="tags">
+                                <div class="tag php">PHP</div>
+                                <div class="tag sql">SQL</div>
+                                <div class="tag js">JS</div>
+                                <div class="tag css">CSS</div>
+                                <div class="tag htmlColor">HTML</div>
+                            </div>
+                        </div>
+    
+                        <div class="element-project-img">
+                            <img src="assets/imgs/logosProjects/workoutLogo.webp" alt="Logo workout">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="element-project">
+                    <a href="#">
+                        <div class="element-project-text">
+                            <div class="element-project-title">Stages2023</div>
+                            <div class="tags">
+                                <div class="tag php">PHP</div>
+                                <div class="tag sql">SQL</div>
+                                <div class="tag js">JS</div>
+                                <div class="tag css">CSS</div>
+                                <div class="tag htmlColor">HTML</div>
+                            </div>
+                        </div>
+    
+                        <div class="element-project-img">
+                            <img src="assets/imgs/logosProjects/stpbbLogo.webp" alt="Logo stages2023">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="element-project">
+                    <a href="#">
+                        <div class="element-project-text">
+                            <div class="element-project-title">JavaTraining</div>
+                            <div class="tags">
+                                <div class="tag java">JAVA</div>
+                            </div>
+                        </div>
+    
+                        <div class="element-project-img">
+                            <img src="assets/imgs/logosProjects/javaLogo.png" alt="Logo java">
+                        </div>
+                    </a>
+                </div>              
+
+                
+            </div>
+            
+
+        </main>
+
+    </div>
+</body>
+<script src="assets/script.js"></script>
+</html>
