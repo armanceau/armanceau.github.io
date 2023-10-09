@@ -1,0 +1,16 @@
+{
+    "name": "Portfolio of Arthur Manceau",
+    "short_name": "Arthur Manceau",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#FC7C7C",
+    "icons": [
+      {
+        "src": "/assets/image/png/imgs/others/arthur.webp",
+        "sizes": "192x192",
+        "type": "image/webp"
+      }
+    ]
+  }
+  
