@@ -1,28 +1,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-    <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+    <!--  créé avec Free Online Sitemap Generator www.xml-sitemaps.com  -->
     
     <!-- Page d'accueil -->
     <url>
-        <loc>https://armanceau.me/</loc>
+        <loc>https://armanceau.netlify.app/</loc>
         <lastmod>2023-10-08T21:24:53+00:00</lastmod>
     </url>
     
     <!-- Page "home.html" -->
     <url>
-        <loc>https://armanceau.me/home.html</loc>
+        <loc>https://armanceau.netlify.app/home.html</loc>
         <lastmod>2023-10-08T21:24:53+00:00</lastmod>
     </url>
     
     <!-- Page "about.html" -->
     <url>
-        <loc>https://armanceau.me/about.html</loc>
+        <loc>https://armanceau.netlify.app/about.html</loc>
         <lastmod>2023-10-08T21:24:53+00:00</lastmod>
     </url>
     
     <!-- Page "projects.html" -->
     <url>
-        <loc>https://armanceau.me/projects.html</loc>
+        <loc>https://armanceau.netlify.app/projects.html</loc>
         <lastmod>2023-10-08T21:24:53+00:00</lastmod>
     </url>
-    
 </urlset>

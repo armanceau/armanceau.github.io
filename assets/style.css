@@ -328,7 +328,7 @@ footer#home {
 }
 #MyClockDisplay{
     font-family: 'Fredoka', sans-serif;
-    background-color: #FC7C7C;
+    background-color: var(--pink);
     border-radius: 10px;
     color: #ffffff;
     padding: 4px;
@@ -423,7 +423,7 @@ h2 .reveal {
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: #292D32;
+    background-color: var(--black);
     transition-duration: .25s;
     border-radius: 10px;
 }
@@ -457,17 +457,17 @@ h2 .reveal {
     margin-top: 100px;
 }
 .menu__box-change{
-    background-color: #292D32;
+    background-color: var(--black);
 }
 .menu__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FC7C7C;
+    background-color: var(--pink);
     width: 300px;
     height: 60px;
     border-radius: 10px;
-    color: #333;
+    color: var(--black);
     font-weight: 900;
     font-size: 1.2em;
     text-decoration: none;
@@ -483,7 +483,7 @@ h2 .reveal {
     width: 250px;
     height: auto;
     border-radius: 999px 999px 999px 999px;
-    background: #FC7C7C;
+    background: var(--pink);
     transform: scale(var(--f));
     transition: .5s;
 }
@@ -524,10 +524,12 @@ h2 .reveal {
     flex-direction: column;
     justify-content: center;
     margin-left: 30px;
+    gap: 5px;
 }
 .element-project-title{
-    font-size: 100px;
-    font-family: 'Give You Glory', cursed;
+    font-size: 90px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
     text-align: left;
 }
 .tags{
@@ -687,7 +689,7 @@ h2 .reveal {
         display: none;
     }
 }
-@media (max-width: 445px) {
+@media (max-width: 550px) {
     .element-project > a {
         flex-direction: column;
         align-items: center;
@@ -696,6 +698,7 @@ h2 .reveal {
     }
     .element-project-text{
         margin: 0;
+        width: 100%;
     }
     .element-project-title{
         text-align: center;

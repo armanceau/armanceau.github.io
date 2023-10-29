@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://armanceau.me//sitemap.xml
+Sitemap: https://armanceau.netlify.app//sitemap.xml
